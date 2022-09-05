@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  background-image: url(../Icons&picture/Background.png);
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  min-height: 25vh;
+}
+
+header nav {
+  width: 60%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1.5rem 3rem;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+header nav ul li a:hover {
+  color: white;
+}
+
+.active {
+  color: white;
+  font-weight: bold;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  padding: 0rem 5rem;
+}
+
+main section.left h1 {
+  font-size: 3rem;
+  color: #0b9890;
+}
+
+main section.left div {
+  padding: 0.5rem 7rem;
+}
+
+main section.left div h2 {
+  font-size: 2rem;
+  padding: 0.5rem 0rem;
+}
+
+main section.left div P {
+  font-size: 1.5rem;
+}
+
+main section.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+  position: relative;
+}
+
+main section.right img {
+  width: 20vw;
+  border-radius: 40%;
+  position: absolute;
+  top: 2vh;
+  left: -5vw;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+footer a {
+  padding: 0rem 1rem;
+}
+
+footer a img {
+  width: 7vw;
+}
+
+@media screen and (max-width: 1020px) {
+  header {
+    min-height: 45vh;
+    background-color: #e08958;
+    margin-bottom: 5rem;
+    opacity: 0.8;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav ul li {
+    padding: 0.5rem 0rem;
+    border-bottom: 1px solid black;
+  }
+  header nav ul li:hover {
+    background-color: #d97134;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.left div {
+    padding: 0.5rem;
+  }
+  main section.left div h2 {
+    padding: 1rem 0rem;
+  }
+  main section.right {
+    margin: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.right img {
+    position: static;
+    width: 50vw;
+  }
+  footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer a {
+    padding: 1rem;
+  }
+  footer a img {
+    width: 10vw;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    min-height: 25vh;
+  }
+}
+
+header.navbar_Resume {
+  background-color: #e08958;
+  min-height: 10vh;
+}
+
+main section.table {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 600px;
+          flex: 3 1 600px;
+}
+
+main section.table table {
+  margin: 5rem;
+  border-collapse: collapse;
+  background-color: rgba(245, 230, 143, 0.5);
+}
+
+main section.table table tr {
+  border-bottom: 2px solid #d2cfcf;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+main section.table table tr td {
+  padding: 1rem 2rem;
+}
+
+main section.table table tr:hover {
+  background-color: #f5e58e;
+}
+
+main div.section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
+}
+
+main div.section section.skill_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+}
+
+main div.section section.skill_icons img {
+  width: 15vw;
+}
+
+main div.section section.footer {
+  min-height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main div.section section.footer a img {
+  padding: 0rem 1rem;
+  width: 8vw;
+}
+
+@media screen and (max-width: 1020px) {
+  main section.table table {
+    margin: 0rem 3rem;
+  }
+  main div.section section.footer a img {
+    width: 10vh;
+  }
+}
+
+header.navbar_Contact {
+  background-color: #f5e58e;
+  min-height: 10vh;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 70vh;
+}
+
+main section.list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  padding: 5rem;
+}
+
+main section.list span {
+  font-size: 2rem;
+  border: 10px solid #eeeeee;
+  background-color: #eeeeee;
+  border-radius: 50px;
+}
+
+main section.list div.footer2 {
+  margin-top: 3em;
+}
+
+main section.list div.footer2 img {
+  width: 10vw;
+  padding: 1rem;
+}
+
+main section.mypic2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  position: relative;
+}
+
+main section.mypic2 img {
+  width: 20vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 10vh;
+}
+
+main section.mypic2 div.picshadow {
+  width: 20vw;
+  height: 35vh;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 10vh;
+  left: 2vw;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1020px) {
+  body header.navbar_Contact nav ul li:hover {
+    background-color: #f7dc47;
+  }
+  main section.list {
+    background-color: #eeeeee;
+    padding: 2rem;
+  }
+  main section.list span {
+    border: none;
+    border-radius: 0;
+    font-size: larger;
+  }
+  main section.list div.footer2 img {
+    width: 10vh;
+  }
+  main section.mypic2 {
+    padding: 3rem;
+  }
+  main section.mypic2 img {
+    width: 40vw;
+  }
+  main section.mypic2 div.picshadow {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

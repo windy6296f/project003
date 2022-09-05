@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* google font setting */
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+header {
+  background-color: #d9d9d9;
+  width: 100%;
+  padding: 1rem;
+}
+
+header h1 i {
+  font-size: 3rem;
+}
+
+.headerTitle {
+  font-size: 2.5rem;
+}
+
+.headerText {
+  font-size: 1rem;
+  font-weight: normal;
+  padding-left: 2.75rem;
+}
+
+nav {
+  background-color: #534a4a;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+nav li {
+  display: flex;
+}
+
+nav ul li a {
+  padding: 0.5rem 0.75rem;
+  color: rgb(165, 164, 164);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.active {
+  color: white;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+nav ul li i {
+  font-size: 1.25rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+
+section.left,
+section.right {
+  padding: 1.5rem;
+}
+
+section.left h2,
+section.left h3 {
+  padding-bottom: 0.25rem;
+}
+
+/* only for Index.html */
+section.right h4 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+section.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.right p {
+  margin: 1rem 0rem;
+}
+
+/* only for Agricultural.html */
+.special {
+  color: red;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 1.35rem;
+}
+
+/* only for Industrialization.html */
+div.center {
+  display: flex;
+  padding: 2rem;
+}
+
+div.center p {
+  padding: 1.5rem;
+}
+
+/* only for economy.html */
+.economy-pic {
+  width: 1000px;
+  padding: 2rem;
+}
+
+ul.economy-list {
+  padding-left: 1rem;
+}
+
+ul.economy-list li a {
+  text-decoration: none;
+  color: rgba(101, 192, 162, 0.75);
+}
+
+section.author-pic {
+  margin: 2rem;
+}
+
+section.author-pic img {
+  border-radius: 100px;
+}
+
+main.chang_to_right {
+  flex-direction: row-reverse;
+}
